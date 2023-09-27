@@ -17,21 +17,21 @@ namespace UsersManagement.Tests.Unit.Api.Controllers
     public class UsersControllerTests
     {
 
-        [Fact]
-        public async Task Sum_returns_summary_Async()
-        {
-            // arrage
-            int x = 1;
-            int y = 2;
-            var z = 3;
-            UsersController controller = new UsersController(null);
-            // Act
-            var result = await controller.Sum(x, y);
+        //[Fact]
+        //public async Task Sum_returns_summary_Async()
+        //{
+        //    // arrage
+        //    int x = 1;
+        //    int y = 2;
+        //    var z = 3;
+        //    UsersController controller = new UsersController(null);
+        //    // Act
+        //    var result = await controller.Sum(x, y);
 
-            // Assert
+        //    // Assert
 
-            Assert.Equal(z, result);
-        }
+        //    Assert.Equal(z, result);
+        //}
 
         [Fact]
         public async Task DeleteUserAsync_return_200_notNull()

@@ -82,7 +82,7 @@ namespace UsersManagement.Core
         {
             var usersdb = _dbContext.Users.AsQueryable();
 
-            if (!String.IsNullOrEmpty(searchText)) 
+            if (!String.IsNullOrEmpty(searchText))
             {
                 usersdb = usersdb.Where(x => x.Name.Contains(searchText) || x.Email.Contains(searchText));
             }
@@ -111,7 +111,8 @@ namespace UsersManagement.Core
         {
             var user = await _dbContext.Users.FirstOrDefaultAsync(x => x.Id == userModel.Id);
 
-            if (user == null) {
+            if (user == null)
+            {
                 return null;
             }
 
@@ -129,9 +130,9 @@ namespace UsersManagement.Core
         {
             var user = await _dbContext.Users.FirstOrDefaultAsync(x => x.Id == userId);
 
-            if (user == null) 
+            if (user == null)
             {
-            return false;
+                return false;
             }
 
             _dbContext.Users.Remove(user);

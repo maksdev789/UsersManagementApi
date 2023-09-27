@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace UsersManagement.Domain.Models
-{
+{   
+    /// <summary>
+    /// В эту модель мы принимаем заполненные пользователем поля с фронта
+    /// </summary>
     public class UserModelCreate
     {
         public string Name { get; set; }

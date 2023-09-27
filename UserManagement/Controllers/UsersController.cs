@@ -79,12 +79,12 @@ namespace UsersManagement.Api.Controllers
             return Ok(result);
         }
 
-        public async Task<int> Sum(int x, int y)
-        {
-            await Task.Yield();
+        //public async Task<int> Sum(int x, int y)
+        //{
+        //    await Task.Yield();
 
-            return x + y;
-        }
+        //    return x + y;
+        //}
 
     }
 }
